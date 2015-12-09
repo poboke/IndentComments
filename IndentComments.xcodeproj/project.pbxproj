@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5C49CD41C1718530088BD61 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C49CD31C1718530088BD61 /* AppKit.framework */; };
+		C5C49CD61C1718530088BD61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C49CD51C1718530088BD61 /* Foundation.framework */; };
+		C5C49CDE1C1718530088BD61 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C49CDD1C1718530088BD61 /* JRSwizzle.m */; };
+		C5C49CE31C1718530088BD61 /* IndentComments.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C49CE21C1718530088BD61 /* IndentComments.m */; };
+		C5C49CED1C1719590088BD61 /* DVTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C49CEC1C1719590088BD61 /* DVTKit.framework */; };
+		C5CEADDB1C171DCC00BAD46B /* DVTSourceLanguageService+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CEADDA1C171DCC00BAD46B /* DVTSourceLanguageService+Hook.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C5C49CD01C1718530088BD61 /* IndentComments.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndentComments.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5C49CD31C1718530088BD61 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		C5C49CD51C1718530088BD61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		C5C49CD91C1718530088BD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5C49CDC1C1718530088BD61 /* JRSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = JRSwizzle/JRSwizzle.h; sourceTree = "<group>"; };
+		C5C49CDD1C1718530088BD61 /* JRSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = JRSwizzle/JRSwizzle.m; sourceTree = "<group>"; };
+		C5C49CDF1C1718530088BD61 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C5C49CE11C1718530088BD61 /* IndentComments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndentComments.h; sourceTree = "<group>"; };
+		C5C49CE21C1718530088BD61 /* IndentComments.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndentComments.m; sourceTree = "<group>"; };
+		C5C49CEC1C1719590088BD61 /* DVTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTKit.framework; path = ../../../../../Applications/Xcode.app/Contents/SharedFrameworks/DVTKit.framework; sourceTree = "<group>"; };
+		C5CEADD81C171DB700BAD46B /* DVTSourceLanguageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceLanguageService.h; sourceTree = "<group>"; };
+		C5CEADD91C171DCC00BAD46B /* DVTSourceLanguageService+Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTSourceLanguageService+Hook.h"; sourceTree = "<group>"; };
+		C5CEADDA1C171DCC00BAD46B /* DVTSourceLanguageService+Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DVTSourceLanguageService+Hook.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5C49CCC1C1718530088BD61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C49CD41C1718530088BD61 /* AppKit.framework in Frameworks */,
+				C5C49CD61C1718530088BD61 /* Foundation.framework in Frameworks */,
+				C5C49CED1C1719590088BD61 /* DVTKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5C49CCE1C1718530088BD61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5C49CC61C1718530088BD61 = {
+			isa = PBXGroup;
+			children = (
+				C5C49CD71C1718530088BD61 /* IndentComments */,
+				C5C49CD21C1718530088BD61 /* Frameworks */,
+				C5C49CD11C1718530088BD61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5C49CD11C1718530088BD61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5C49CD01C1718530088BD61 /* IndentComments.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5C49CD21C1718530088BD61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5C49CEC1C1719590088BD61 /* DVTKit.framework */,
+				C5C49CE91C1718850088BD61 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5C49CD71C1718530088BD61 /* IndentComments */ = {
+			isa = PBXGroup;
+			children = (
+				C5C49CE11C1718530088BD61 /* IndentComments.h */,
+				C5C49CE21C1718530088BD61 /* IndentComments.m */,
+				C5C49CEA1C1718CB0088BD61 /* HookClasses */,
+				C5C49CEB1C1718CB0088BD61 /* XcodeHeaders */,
+				C5C49CDB1C1718530088BD61 /* JRSwizzle */,
+				C5C49CD81C1718530088BD61 /* Supporting Files */,
+			);
+			path = IndentComments;
+			sourceTree = "<group>";
+		};
+		C5C49CD81C1718530088BD61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5C49CD91C1718530088BD61 /* Info.plist */,
+				C5C49CDF1C1718530088BD61 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5C49CDB1C1718530088BD61 /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				C5C49CDC1C1718530088BD61 /* JRSwizzle.h */,
+				C5C49CDD1C1718530088BD61 /* JRSwizzle.m */,
+			);
+			name = JRSwizzle;
+			sourceTree = "<group>";
+		};
+		C5C49CE91C1718850088BD61 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5C49CD31C1718530088BD61 /* AppKit.framework */,
+				C5C49CD51C1718530088BD61 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C5C49CEA1C1718CB0088BD61 /* HookClasses */ = {
+			isa = PBXGroup;
+			children = (
+				C5CEADD91C171DCC00BAD46B /* DVTSourceLanguageService+Hook.h */,
+				C5CEADDA1C171DCC00BAD46B /* DVTSourceLanguageService+Hook.m */,
+			);
+			path = HookClasses;
+			sourceTree = "<group>";
+		};
+		C5C49CEB1C1718CB0088BD61 /* XcodeHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				C5CEADD81C171DB700BAD46B /* DVTSourceLanguageService.h */,
+			);
+			path = XcodeHeaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5C49CCF1C1718530088BD61 /* IndentComments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5C49CE61C1718530088BD61 /* Build configuration list for PBXNativeTarget "IndentComments" */;
+			buildPhases = (
+				C5C49CCB1C1718530088BD61 /* Sources */,
+				C5C49CCC1C1718530088BD61 /* Frameworks */,
+				C5C49CCD1C1718530088BD61 /* Resources */,
+				C5C49CCE1C1718530088BD61 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IndentComments;
+			productName = IndentComments;
+			productReference = C5C49CD01C1718530088BD61 /* IndentComments.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5C49CC71C1718530088BD61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Jobs;
+				TargetAttributes = {
+					C5C49CCF1C1718530088BD61 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C5C49CCA1C1718530088BD61 /* Build configuration list for PBXProject "IndentComments" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C5C49CC61C1718530088BD61;
+			productRefGroup = C5C49CD11C1718530088BD61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5C49CCF1C1718530088BD61 /* IndentComments */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5C49CCD1C1718530088BD61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5C49CCB1C1718530088BD61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C49CDE1C1718530088BD61 /* JRSwizzle.m in Sources */,
+				C5C49CE31C1718530088BD61 /* IndentComments.m in Sources */,
+				C5CEADDB1C171DCC00BAD46B /* DVTSourceLanguageService+Hook.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C5C49CE41C1718530088BD61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		C5C49CE51C1718530088BD61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		C5C49CE71C1718530088BD61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_DIR)/../Frameworks",
+					"$(DEVELOPER_DIR)/../SharedFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IndentComments/PrefixHeader.pch;
+				INFOPLIST_FILE = IndentComments/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACH_O_TYPE = mh_bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poboke.IndentComments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		C5C49CE81C1718530088BD61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_DIR)/../Frameworks",
+					"$(DEVELOPER_DIR)/../SharedFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IndentComments/PrefixHeader.pch;
+				INFOPLIST_FILE = IndentComments/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACH_O_TYPE = mh_bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poboke.IndentComments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5C49CCA1C1718530088BD61 /* Build configuration list for PBXProject "IndentComments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5C49CE41C1718530088BD61 /* Debug */,
+				C5C49CE51C1718530088BD61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5C49CE61C1718530088BD61 /* Build configuration list for PBXNativeTarget "IndentComments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5C49CE71C1718530088BD61 /* Debug */,
+				C5C49CE81C1718530088BD61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5C49CC71C1718530088BD61 /* Project object */;
+}
