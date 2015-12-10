@@ -34,17 +34,15 @@
         }
     }
     
-    NSString *resultString = @"";
+    // Check if the string contains nonwhitespace character
     NSRange range = [commentingString rangeOfString:@"[^\\s]" options:NSRegularExpressionSearch];
-    if (range.location != NSNotFound) {
-        NSMutableString *mutableString = [commentingString mutableCopy];
-        [mutableString insertString:lineCommentPrefix atIndex:range.location];
-        resultString = [mutableString copy];
-    } else {
-        resultString = [lineCommentPrefix stringByAppendingString:commentingString];
+    if (range.location == NSNotFound) {
+        return commentingString;
     }
     
-    return resultString;
+    NSMutableString *mutableString = [commentingString mutableCopy];
+    [mutableString insertString:lineCommentPrefix atIndex:range.location];
+    return [mutableString copy];
 }
 
 @end
