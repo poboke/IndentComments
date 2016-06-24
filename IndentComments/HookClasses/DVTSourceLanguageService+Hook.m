@@ -14,7 +14,7 @@
 {
     [self jr_swizzleMethod:@selector(stringByCommentingString:)
                 withMethod:@selector(hook_stringByCommentingString:)
-                     error:nil];
+                     error:NULL];
 }
 
 
